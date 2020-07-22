@@ -162,7 +162,7 @@ const Projects = () => {
                 </a>
               </li>
             </div>
-            <h1 className="card__title">Quotes Generator</h1>
+            <h1 className="card__title">Quotes generator</h1>
             <p className="card__text">Search quotes from famous people.</p>
             <p className="card__technologies">Vue, Vuex, Material UI</p>
           </div>

@@ -24,3 +24,5 @@ yarn-error.log*
 
 deploy_client.sh
 push_repo.sh
+# Local Netlify folder
+.netlify
