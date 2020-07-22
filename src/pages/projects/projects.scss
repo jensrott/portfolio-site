@@ -6,6 +6,7 @@
   .container {
     max-width: 1050px;
     margin: 2% auto;
+    height: 100vh;
 
     @media screen and (max-width: 768px) {
       max-width: 290px;
@@ -13,10 +14,10 @@
     }
 
     &__start {
-      margin-bottom: 1rem;
-      margin-top: 6rem;
+      margin: 1rem 0;
       display: flex;
       justify-content: space-between;
+      flex-wrap: wrap;
     }
 
     .btn {
@@ -31,6 +32,10 @@
       padding: 1.3rem;
       border-radius: 0.75rem;
       animation: fadein 2s;
+
+      @media screen and (max-width: 768px) {
+        width: 100%;
+      }
     }
 
     .cards-container {
