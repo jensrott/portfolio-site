@@ -1,3 +1,5 @@
+$br-card: 0.45rem;
+
 #main {
   display: flex;
   align-items: center;
@@ -30,7 +32,7 @@
       background-color: #fff;
       color: #000;
       padding: 1.3rem;
-      border-radius: 0.75rem;
+      border-radius: $br-card;
       animation: fadein 2s;
 
       @media screen and (max-width: 768px) {
@@ -43,6 +45,7 @@
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       grid-gap: 1rem;
+      margin-bottom: 3rem;
 
       @media screen and (max-width: 768px) {
         grid-template-columns: 1fr;
