@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-import cv from "../../assets/cv_22_07_2020.pdf";
+import cv from "../../assets/cv_27_07_2020.pdf";
 
 import "./projects.scss";
 
