@@ -3,6 +3,8 @@ import { Link } from "react-router-dom";
 
 import cv from "../../assets/cv_27_07_2020.pdf";
 
+import ReactTooltip from "react-tooltip";
+
 import "./projects.scss";
 
 const Projects = () => {
@@ -22,10 +24,11 @@ const Projects = () => {
             CV Download
           </a>
         </div>
+        <ReactTooltip />
         <div className="cards-container">
           <div className="card">
             <div className="card__icons">
-              <li className="icon">
+              <li data-tip="Github" className="icon">
                 <a
                   href="https://github.com/jensrott/Social-Cycling"
                   target="_blank"
@@ -34,7 +37,7 @@ const Projects = () => {
                   <i className="fab fa-github"></i>
                 </a>
               </li>
-              <li className="icon">
+              <li data-tip="Live" className="icon">
                 <a
                   href="https://social-cycling.netlify.app/"
                   target="_blank"
@@ -55,7 +58,7 @@ const Projects = () => {
           </div>
           <div className="card">
             <div className="card__icons">
-              <li className="icon">
+              <li data-tip="Github" className="icon">
                 <a
                   href="https://github.com/jensrott/book-tracking-app"
                   target="_blank"
@@ -64,7 +67,7 @@ const Projects = () => {
                   <i className="fab fa-github"></i>
                 </a>
               </li>
-              <li className="icon">
+              <li data-tip="Live" className="icon">
                 <a
                   href="https://book-tracker-app.netlify.app/"
                   target="_blank"
@@ -82,7 +85,7 @@ const Projects = () => {
           </div>
           <div className="card">
             <div className="card__icons">
-              <li className="icon">
+              <li data-tip="Github" className="icon">
                 <a
                   href="https://github.com/jensrott/bachelorproef-demonstrator-site"
                   target="_blank"
@@ -91,7 +94,7 @@ const Projects = () => {
                   <i className="fab fa-github"></i>
                 </a>
               </li>
-              <li className="icon">
+              <li data-tip="Live" className="icon">
                 <a
                   href="https://eloquent-clarke-888930.netlify.app/"
                   target="_blank"
@@ -112,7 +115,7 @@ const Projects = () => {
           </div>
           <div className="card">
             <div className="card__icons">
-              <li className="icon">
+              <li data-tip="Github" className="icon">
                 <a
                   href="https://github.com/jensrott/badminton-vlaanderen"
                   target="_blank"
@@ -121,7 +124,7 @@ const Projects = () => {
                   <i className="fab fa-github"></i>
                 </a>
               </li>
-              <li className="icon">
+              <li data-tip="Live" className="icon">
                 <a
                   href="https://www.shuttlekids.be/home/"
                   target="_blank"
@@ -143,7 +146,7 @@ const Projects = () => {
           </div>
           <div className="card">
             <div className="card__icons">
-              <li className="icon">
+              <li data-tip="Github" className="icon">
                 <a
                   href="https://github.com/jensrott/quotes-generator-app"
                   target="_blank"
@@ -152,7 +155,7 @@ const Projects = () => {
                   <i className="fab fa-github"></i>
                 </a>
               </li>
-              <li className="icon">
+              <li data-tip="Live" className="icon">
                 <a
                   href="https://quotes-fetcher-app.netlify.app/"
                   target="_blank"
@@ -168,7 +171,7 @@ const Projects = () => {
           </div>
           <div className="card">
             <div className="card__icons">
-              <li className="icon">
+              <li data-tip="Github" className="icon">
                 <a
                   href="https://github.com/jensrott/movie-tracking-app"
                   target="_blank"
@@ -177,7 +180,7 @@ const Projects = () => {
                   <i className="fab fa-github"></i>
                 </a>
               </li>
-              <li className="icon">
+              <li data-tip="Live" className="icon">
                 <a
                   href="https://github.com/jensrott/movie-tracking-app"
                   target="_blank"
