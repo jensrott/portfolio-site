@@ -1,3 +1,5 @@
+$br-card: 0.45rem;
+
 #main {
   display: flex;
   align-items: center;
@@ -7,6 +9,7 @@
   .container {
     max-width: 1050px;
     margin: 2% auto;
+    height: 100vh;
 
     @media screen and (max-width: 768px) {
       max-width: 290px;
@@ -14,10 +17,10 @@
     }
 
     &__start {
-      margin-bottom: 1rem;
-      margin-top: 6rem;
+      margin: 1rem 0;
       display: flex;
       justify-content: space-between;
+      flex-wrap: wrap;
     }
 
     .btn {
@@ -29,8 +32,12 @@
       background-color: #fff;
       color: #000;
       padding: 1.3rem;
-      border-radius: 0.75rem;
       animation: fade-in 2s;
+      border-radius: $br-card;
+
+      @media screen and (max-width: 768px) {
+        width: 100%;
+      }
     }
 
     .cards-container {
@@ -38,6 +45,7 @@
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       grid-gap: 1rem;
+      margin-bottom: 3rem;
 
       @media screen and (max-width: 768px) {
         grid-template-columns: 1fr;

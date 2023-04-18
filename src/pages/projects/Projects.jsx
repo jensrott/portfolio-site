@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 
+import ReactTooltip from "react-tooltip";
+
 import cv from "../../assets/cv_22_07_2020.pdf";
 import projectsData from "../../data/projects.json";
 
@@ -67,6 +69,7 @@ const Projects = () => {
                   </p>
                 ))}
               </div>
+        <ReactTooltip />
             </div>
           ))}
         </div>
