@@ -1,3 +1,4 @@
+$mb: 1rem;
 $br-card: 0.45rem;
 
 #main {
@@ -7,14 +8,9 @@ $br-card: 0.45rem;
   min-height: 100vh;
 
   .container {
-    max-width: 1050px;
+    max-width: 81%;
     margin: 2% auto;
     height: 100vh;
-
-    @media screen and (max-width: 768px) {
-      max-width: 290px;
-      margin: 0% auto;
-    }
 
     &__start {
       margin: 1rem 0;
@@ -24,7 +20,7 @@ $br-card: 0.45rem;
     }
 
     .btn {
-      margin-bottom: 1rem;
+      margin-bottom: $mb;
       text-align: center;
       font-weight: bold;
       box-shadow: rgba(0, 19, 25, 0.2) 0px 1px 2px,
@@ -43,11 +39,10 @@ $br-card: 0.45rem;
     .cards-container {
       width: 100%;
       display: grid;
-      grid-template-columns: repeat(2, 1fr);
+      grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
       grid-gap: 1rem;
-      margin-bottom: 3rem;
 
-      @media screen and (max-width: 768px) {
+      @media screen and (max-width: 640px) {
         grid-template-columns: 1fr;
       }
 
@@ -55,6 +50,7 @@ $br-card: 0.45rem;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        margin-bottom: $mb;
 
         &__icons {
           display: flex;
@@ -71,16 +67,17 @@ $br-card: 0.45rem;
 
         &__text {
           height: 100px;
-          line-height: 1.9;
-          margin-bottom: 1.5rem;
+          width: 87%;
+          line-height: 1.7;
+          margin-bottom: 2rem;
         }
 
         &__technologies-container {
           display: flex;
           flex-wrap: wrap;
+          gap: 0.5rem;
 
           .technology {
-            margin-right: 0.7rem;
             background-color: #2a314c;
             padding: 0.5rem;
             border-radius: 1rem;
