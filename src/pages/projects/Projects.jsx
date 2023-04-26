@@ -13,9 +13,14 @@ const Projects = () => {
     setProjects(projectsData);
   }
 
+  const filterProjects = (tag) => {
+    const filteredProjectsBasedOnTag = projects.filter(project => project.technologies.includes(tag));
+    setProjects(filteredProjectsBasedOnTag);
+  }
+
   useEffect(() => {
     fetchProjects();
-  }, [projects])
+  }, [])
 
   return (
     <div id="main">
@@ -62,7 +67,11 @@ const Projects = () => {
               </p>
               <div className="card__technologies-container">
                 {project.technologies?.map((technology, index) => (
-                  <p key={index} className="technology" title="coming soon">
+                  <p
+                    key={index}
+                    className="technology"
+                    title={`Show all project with: ${technology}`}
+                    onClick={() => filterProjects(technology)}>
                     {technology}
                   </p>
                 ))}
